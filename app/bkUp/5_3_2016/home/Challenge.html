@@ -1,0 +1,30 @@
+<ion-view>
+	<div class="bar bar-subheader learnHeight">
+	  <h1 class="learnTitle">Challenge</h1>
+	</div>
+
+	<ion-content class="contHome">
+		<div ng-controller="ChallengeCtrl">
+            
+            
+            <div class="progBar">
+                <div id="progClass" class="progBarRun"></div>
+            </div>
+            
+            <div class="scoreClass">{{count}}/{{totalCount}}</div>
+            
+            
+            
+			<div class="list list-inset numList">
+                <!-- The color change class is added here ONLY to be used in the errorClass function in controller-->
+				<p class="numPara numParaMargin">{{challenge.num1}} x {{challenge.num2}} = ?</p>
+                
+                
+				<p><button class="button button-positive numButton1 colorChangeClass" ng-click="oldArray(challenge.oldArr[0], 0)">{{challenge.oldArr[0]}}</button></p> 
+				<p><button class="button button-positive numButton1 colorChangeClass" ng-click="oldArray(challenge.oldArr[1], 1)">{{challenge.oldArr[1]}}</button></p>
+				<p><button class="button button-positive numButton1 colorChangeClass" ng-click="oldArray(challenge.oldArr[2], 2)">{{challenge.oldArr[2]}}</button></p>
+								
+	       </div>
+		</div>	<!--End:  ng-controller="mulDigit1Ctrl" -->
+	</ion-content>	
+</ion-view>
